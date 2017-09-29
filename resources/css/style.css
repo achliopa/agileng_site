@@ -1,3 +1,17 @@
+/*********************************************/
+/* author: a.chliopanos@agileng.net
+/* description: General Styles File
+/
+/*********************************************/
+
+
+
+
+/********************************************/
+/* GENERAL STYLES
+?********************************************/
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,17 +20,121 @@
 
 html {
 	background-color: #fff;
-	color: #555;
+	color: #222;
 	font-family: 'Roboto', 'Arial', sans-serif;
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
 }
 
+h1,
+h2,
+h3 {	
+	letter-spacing: 1px;
+}
+
+h1 {
+	font-weight: 100;
+	font-size: 300%;
+	margin-top: 0;
+	margin-bottom:30px;
+	word-spacing: 4px;
+}
+
+h2 {
+	font-weight: 300;
+	font-size: 200%;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom:30px;
+}
+
+h3 {
+	font-weight: 300;
+	font-size: 120%;
+	margin-bottom:15px;
+	word-spacing: 3px;
+
+}
+
+h2:after {
+	display: block;
+	height: 3px;
+	background-color: #1abc9c;
+	content: " ";
+	width: 400px;
+	margin:30px auto 0 auto;
+}
+
+/********************************************/
+/* REUSABLE COMPONENTS
+?********************************************/
+
+.green {
+	color: #1abc9c;
+}
+
 .row {
 	max-width: 1140px;
 	margin: 0 auto;
 }
+
+/******** BUTTONS *********/
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	text-decoration: none;
+	border-radius: 5px;
+	color: #fbfbfb;
+	margin: 5px;
+	transition: background-color 0.2s;
+}
+
+.btn-std:link,
+.btn-std:visited {
+	background-color: #2966C0;
+}
+
+.btn-std:hover,
+.btn-std:active {
+	background-color: #0D4EAF;
+}
+
+.btn-special:link,
+.btn-special:visited {
+	background-color: #1abc9c;
+}
+
+.btn-special:hover,
+.btn-special:active{
+	background-color: #00AA89;
+}
+
+/******** PARAGRAPHS *********/
+
+.long-copy {
+	line-height: 145%;
+	width: 70%;
+	margin-left: 15%;
+}
+
+.box p {
+	font-size: 90%;
+	line-height: 145%;
+	text-align: justify; 
+}
+
+/******** ICONS *********/
+
+.icon-lg {
+	font-size: 350%;
+}
+
+/********************************************/
+/* HEADER STYLES
+?********************************************/
+
 
 header {
 	background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../img/hero.jpg);
@@ -27,10 +145,6 @@ header {
 	color: #fbfbfb;
 }
 
-header h1 {	
-
-}
-
 .hero-text-box {
 	position: absolute;
 	width: 1140px;
@@ -39,11 +153,69 @@ header h1 {
 	transform: translate(-50%, -50%);
 }
 
-.green {
-	color: #1abc9c;
-	/*color: #16a085;*/
+header img {
+	height: 300px;
+	width: auto;
 }
 
-header img {
-	width: 300px;
+.brand-txt {
+	/*font-family: 'Montserrat', 'Arial', sans-serif;*/
+	font-weight: 700;
+	font-size: 500%;
+	margin-bottom: 50px;
+}
+
+.logo {
+	margin-top: 5px;
+	height: 60px;
+	width: auto;
+	float: left;
+}
+
+.logo-txt {
+	float: left;
+	font-weight: 700;
+	font-size: 200%;
+	padding-top: 10px;
+	margin-left: 10px;
+}
+
+.main-nav {
+	float: right;
+	list-style: none;
+	margin-top: 25px;
+}
+
+.main-nav li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+	padding: 4px 0;
+	color: #fbfbfb;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	letter-spacing: 1px;
+	border-bottom: 2px solid transparent;
+	transition: border 0.3s;
+}
+
+.main-nav li a:active,
+.main-nav li a:hover {
+	border-bottom: 2px solid #1abc9c;
+} 
+
+/********************************************/
+/* SECTION SERVICES
+?********************************************/
+
+section {
+	padding: 80px 0; 
+}
+
+.box {
+	padding: 1%;
 }
