@@ -1,0 +1,27 @@
+{
+  "name": "agileng_site",
+  "version": "1.0.0",
+  "description": "agileng.net website",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/achliopa/agileng_site.git"
+  },
+  "keywords": [
+    "agileng",
+    "website"
+  ],
+  "author": "athchliopanos@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/achliopa/agileng_site/issues"
+  },
+  "homepage": "https://github.com/achliopa/agileng_site#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.1"
+  }
+}
