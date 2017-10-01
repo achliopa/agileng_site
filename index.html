@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 	<header>
@@ -68,6 +69,152 @@
 			</div>
 		</div>
 	</section>
-	
+	<section class="section-skills">
+		<ul class="skills-showcase">
+			<li>
+				<figure class='skill-photo'>
+					<img src="resources/img/1.gif" alt='mern stack web development'>
+					<div class="overlay">
+    					<div class="overlay-text">Modern Web and Mobile Application development using the <a href="https://www.mongodb.com/blog/post/the-modern-application-stack-part-1-introducing-the-mean-stack">MERN</a> stack and the Javascript programming language</div>
+  					</div>
+				</figure>
+			</li>
+			<li>
+				<figure class='skill-photo'>
+					<img src="resources/img/2.jpg" alt='nvidia tegra supercomputing'>
+					<div class="overlay">
+    					<div class="overlay-text">Real-Time Embedded Machine Learning and Machine Vision Applications built on the <a href="https://devblogs.nvidia.com/parallelforall/jetson-tx2-delivers-twice-intelligence-edge/">NVIDIA Tegra</a> Mobile Supercomputing Processors</div>
+  					</div>
+				</figure>
+			</li>
+			<li>
+				<figure class='skill-photo'>
+					<img src="resources/img/3.jpg" alt='python machone learning'>
+					<div class="overlay">
+    					<div class="overlay-text">Machine Learning Applications built on the Python Language and Libraries</div>
+  					</div>
+				</figure>
+			</li>
+			<li>
+				<figure class='skill-photo'>
+					<img src="resources/img/4.jpg" alt='embedded systems design'>
+					<div class="overlay">
+    					<div class="overlay-text">Embedded System Design and Development for Mission Critical and Resource Constraint Applications</div>
+  					</div>
+				</figure>
+			</li>
+		</ul>
+		<ul class="skills-showcase">
+			<li>
+				<figure class='skill-photo'>
+					<img src="resources/img/5.jpg" alt='industrial automation'>
+					<div class="overlay">
+    					<div class="overlay-text">Industrial Automation Implementations using Off-The-Shelf Components or Custom Solutions</div>
+  					</div>
+				</figure>
+			</li>
+			<li>
+				<figure class='skill-photo'>
+					<img src="resources/img/6.jpg" alt='medical software'>
+					<div class="overlay">
+    					<div class="overlay-text">Medical Software and Medical Device Development or Consulting in Interoperability, Regulatory Compliance</div>
+  					</div>
+				</figure>
+			</li>
+			<li>
+				<figure class='skill-photo'>
+					<img src="resources/img/7.jpg" alt='mining technologies'>
+					<div class="overlay">
+    					<div class="overlay-text">Mining Technology and Automation Solutions, Project Management, Design and Consulting</div>
+  					</div>
+				</figure>
+			</li>
+			<li>
+				<figure class='skill-photo'>
+					<img src="resources/img/8.jpg" alt='agile methodology'>
+					<div class="overlay">
+    					<div class="overlay-text">We use the <a href="https://www.versionone.com/agile-101/">Agile Methodology</a> in the Project Lifecycle to ensure Customer Satisfaction and Quality</div>
+  					</div>
+				</figure>
+			</li>
+		</ul>
+	</section>
+	<section class="section-form">
+		<div class="row">
+			<h2>Get in Contact with the Agileng Team</h2>
+		</div>
+		<div class="row">
+			<form action="#" method="POST" class="contact-form">
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label for="name">My name is:</label>
+					</div>
+					<div class="col span-2-of-3">
+						<input type="text" name="name" id="name" placeholder="Your name" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label for="email">Email:</label>
+					</div>
+					<div class="col span-2-of-3">
+						<input type="email" name="email" id="email" placeholder="Your email" required>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label for="country">I am located in:</label>
+					</div>
+					<div class="col span-2-of-3">
+						<select name="country" id="country">
+                        	<option value="gr" selected>Greece</option>
+                        	<option value="nl">Netherlands</option>
+                        	<option value="es">Spain</option>
+                        	<option value="us">USA</option>
+                        	<option value="other">Other</option>
+                        </select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label for="reason">I want to:</label>
+					</div>
+					<div class="col span-2-of-3">
+						<select name="reason" id="reason">
+                        	<option value="coop" selected>Submit a Project Proposal</option>
+                        	<option value="proj">Use your Services</option>
+                        	<option value="join">Join the Team</option>
+                        	<option value="us">Get in Contact with Agileng</option>
+                        	<option value="other">Other</option>
+                        </select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label>Drop us a line</label>
+					</div>
+					<div class="col span-2-of-3">
+						<textarea name="message" placeholder="Your message"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label>&nbsp;</label>
+					</div>
+					<div class="col span-2-of-3">
+						<div class="g-recaptcha" data-sitekey="6LdMtzIUAAAAAO5dSgQ9yGLjhLpELU2yFKtcDyYQ"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label>&nbsp;</label>
+					</div>
+					<div class="col span-2-of-3">
+						<input type="submit" value="Send it!">
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
 </body>
 </html>
