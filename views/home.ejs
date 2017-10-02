@@ -144,7 +144,7 @@
 			<h2>Get in Contact with the Agileng Team</h2>
 		</div>
 		<div class="row">
-			<form action="#" method="POST" class="contact-form">
+			<form action="/contact" method="POST" class="contact-form">
 				<div class="row">
 					<div class="col span-1-of-3">
 						<label for="name">My name is:</label>
@@ -167,11 +167,10 @@
 					</div>
 					<div class="col span-2-of-3">
 						<select name="country" id="country">
-                        	<option value="gr" selected>Greece</option>
-                        	<option value="nl">Netherlands</option>
-                        	<option value="es">Spain</option>
-                        	<option value="us">USA</option>
-                        	<option value="other">Other</option>
+							
+							<% for(var i = 0; i<countries.length ; i++) { %>
+                        		<option value="<%= countries[i].code %>"><%= countries[i].name %></option>
+							<% } %>
                         </select>
 					</div>
 				</div>
@@ -184,7 +183,7 @@
                         	<option value="coop" selected>Submit a Project Proposal</option>
                         	<option value="proj">Use your Services</option>
                         	<option value="join">Join the Team</option>
-                        	<option value="us">Get in Contact with Agileng</option>
+                        	<option value="contact">Get in Contact with Agileng</option>
                         	<option value="other">Other</option>
                         </select>
 					</div>
@@ -202,7 +201,7 @@
 						<label>&nbsp;</label>
 					</div>
 					<div class="col span-2-of-3">
-						<div class="g-recaptcha" data-sitekey="6LdMtzIUAAAAAO5dSgQ9yGLjhLpELU2yFKtcDyYQ"></div>
+						<div class="g-recaptcha" data-sitekey="6Ler0DIUAAAAAMucslu9MTq7pjd1OKTxzFnVtH-N"></div>
 					</div>
 				</div>
 				<div class="row">
@@ -210,7 +209,7 @@
 						<label>&nbsp;</label>
 					</div>
 					<div class="col span-2-of-3">
-						<input type="submit" value="Send it!">
+						<input type="submit" value="Send it!" class='btn btn-special'>
 					</div>
 				</div>
 			</form>

@@ -108,7 +108,7 @@ h2:after {
 }
 
 .btn-special:hover,
-.btn-special:active{
+.btn-special:active {
 	background-color: #00AA89;
 }
 
@@ -312,4 +312,12 @@ textarea {
 
 textarea {
 	height: 100px;
+}
+
+input[type=submit] {
+	border:none;
+	background: none;
+	font-weight: 300;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	background-color: #1abc9c;
 }
