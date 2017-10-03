@@ -22,7 +22,8 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(req,res) {
-    res.render('home', {countries : countries, captcha:recaptcha.render()});
+    var date = new Date();
+    res.render('home', {countries : countries, captcha:recaptcha.render(), date: date});
 });
 
 app.post('/contact', function(req,res) {

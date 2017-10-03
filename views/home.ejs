@@ -8,7 +8,6 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet">
-	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 	<header>
@@ -139,6 +138,19 @@
 			</li>
 		</ul>
 	</section>
+	<section class="section-locations">
+		<div class="row">
+			<h2>We operate in the following areas</h2>
+		</div>
+		<div class="row">
+			<div class="col span-1-of-2">
+				<div id="map"></div>
+			</div>
+			<div class="col span-1-of-2">
+				
+			</div>
+		</div>
+	</section>
 	<section class="section-form">
 		<div class="row">
 			<h2>Get in Contact with the Agileng Team</h2>
@@ -147,7 +159,7 @@
 			<form action="/contact" method="POST" class="contact-form">
 				<div class="row">
 					<div class="col span-1-of-3">
-						<label for="name">My name is:</label>
+						<label for="name">Name:</label>
 					</div>
 					<div class="col span-2-of-3">
 						<input type="text" name="name" id="name" placeholder="Your name" required>
@@ -163,7 +175,7 @@
 				</div>
 				<div class="row">
 					<div class="col span-1-of-3">
-						<label for="country">I am located in:</label>
+						<label for="country">Country:</label>
 					</div>
 					<div class="col span-2-of-3">
 						<select name="country" id="country">
@@ -176,21 +188,29 @@
 				</div>
 				<div class="row">
 					<div class="col span-1-of-3">
-						<label for="reason">I want to:</label>
+						<label for="reason">Message subject:</label>
 					</div>
 					<div class="col span-2-of-3">
 						<select name="reason" id="reason">
-                        	<option value="coop" selected>Submit a Project Proposal</option>
-                        	<option value="proj">Use your Services</option>
-                        	<option value="join">Join the Team</option>
-                        	<option value="contact">Get in Contact with Agileng</option>
+                        	<option value="project" selected>Project Proposal</option>
+                        	<option value="services">Request Agileng Services</option>
+                        	<option value="join">Join Agileng Team</option>
+                        	<option value="info">Information Inquiry</option>
                         	<option value="other">Other</option>
                         </select>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col span-1-of-3">
-						<label>Drop us a line</label>
+						<label>Newsletter:</label>
+					</div>
+					<div class="col span-2-of-3">
+						<input type="checkbox" name="news" id="news" checked>Yes
+					</div>
+				</div>
+				<div class="row">
+					<div class="col span-1-of-3">
+						<label>Message:</label>
 					</div>
 					<div class="col span-2-of-3">
 						<textarea name="message" placeholder="Your message"></textarea>
@@ -215,5 +235,32 @@
 			</form>
 		</div>
 	</section>
+	<footer>
+		<div class="row">
+			<div class="col span-1-of-2">
+				<ul class="footer-nav">
+					<li><a href="#">About</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="col span-1-of-2">
+				<ul class="social-nav">
+					<li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+					<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+					<li><a href="#"><i class="ion-social-youtube"></i></a></li>
+					<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div calss="row">
+			<p>Copyright &copy; <%= date.getFullYear() %> by Agileng</p>
+		</div>
+	</footer>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD19bKfrPlfqkMEIZClW2dWf0IMChyOOS4&callback=initMap" type="text/javascript">
+    </script>
+	<script src="resources/js/script.js"></script>
 </body>
 </html>
