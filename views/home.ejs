@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Agileng | Homepage</title>
 	<link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="vendor/css/Grid.css">
 	<link rel="stylesheet" type="text/css" href="vendor/css/ionicons.min.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:500,600" rel="stylesheet">
 </head>
@@ -240,7 +242,11 @@
 						<select name="country" id="country">
 							
 							<% for(var i = 0; i<countries.length ; i++) { %>
-                        		<option value="<%= countries[i].code %>"><%= countries[i].name %></option>
+                        		<% if (countries[i].code == 'GR') { %>
+                        			<option value="<%= countries[i].code %>" selected><%= countries[i].name %></option>
+                        		<% } else { %> 
+                        			<option value="<%= countries[i].code %>"><%= countries[i].name %></option>
+                        		<%	} %>
 							<% } %>
                         </select>
 					</div>

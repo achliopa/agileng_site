@@ -25,6 +25,7 @@ html {
 	font-weight: 300;
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
+	overflow-x: hidden;
 }
 
 h1,
@@ -73,6 +74,10 @@ h2:after {
 	content: " ";
 	width: 400px;
 	margin:30px auto 0 auto;
+}
+
+section {
+	padding: 80px 0; 
 }
 
 /********************************************/
@@ -179,8 +184,9 @@ header img {
 }
 
 .logo {
-	margin-top: 5px;
-	height: 60px;
+	margin-top: 10px;
+	margin-left: 10px;
+	height: 40px;
 	width: auto;
 	float: left;
 }
@@ -190,13 +196,14 @@ header img {
 	font-weight: 700;
 	font-size: 200%;
 	padding-top: 10px;
-	margin-left: 10px;
+	margin-left: 5px;
 }
 
 .main-nav {
 	float: right;
 	list-style: none;
 	margin-top: 25px;
+	margin-right: 10px;
 }
 
 .main-nav li {
@@ -225,8 +232,8 @@ header img {
 /* SECTION SERVICES
 ?********************************************/
 
-section {
-	padding: 80px 0; 
+.section-services {
+	background-color: #f4f4f4;
 }
 
 .box {
@@ -370,6 +377,7 @@ section {
 	border-radius: 5px;
 	width: 90%;
 	margin-left: 5%;
+	box-shadow: 0 2px 2px #efefef
 }
 
 .partner-box div {
@@ -388,6 +396,17 @@ section {
 .icon-list {
 	color: #1abc9c;
 	padding-right: 5px;
+}
+
+.partner-box div:last-of-type {
+	text-align: center;
+}
+
+.partner-text {
+	font-size: 120%;
+	font-weight: 100;
+	text-align: center;
+	word-spacing: 1px;
 }
 
 /********************************************/
@@ -442,11 +461,13 @@ footer {
 .footer-nav {
 	list-style: none;
 	float: left;
+	margin-left: 10px;
 }
 
 .social-nav {
 	list-style: none;
 	float: right;
+	margin-right: 10px;
 }
 
 .footer-nav li,

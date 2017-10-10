@@ -1,0 +1,45 @@
+
+
+/*Big tablets to 1200px(width close to 1140px row): from 1024 to 1200px */
+@media only screen and (max-width: 1200px) {
+	.hero-text-box {
+		width: 100%;
+		padding: 0 2%;
+	}
+
+	*row { padding: 0 2% }
+
+}
+/*Small tablets to big tablets: from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
+	html { font-size: 18px }
+	section { padding: 60px 0; }
+
+	.long-copy {
+		width: 80%;
+		margin-left: 10%;
+	}
+
+	.city-feature  { font-size: 80%; }
+
+	h2 { font-size: 180%; }
+
+	.contact-form { width: 80%; }
+
+/*Small Phones to small tablers: from 481 to 767px */
+@media only screen and (max-width: 767px) {
+	
+	header img { height: 200px; }
+	.brand-txt {
+		font-size: 400%;
+		margin-bottom: 40px;
+	}
+	html { font-size: 16px }
+	section { padding: 30px 0; }
+	.col { width: 100%; }
+}
+
+/*Small Phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+
+}

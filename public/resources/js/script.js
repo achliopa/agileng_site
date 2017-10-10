@@ -5,5 +5,4 @@ function initMap() {
     zoom: 12
   });
 }
-
 // AIzaSyD19bKfrPlfqkMEIZClW2dWf0IMChyOOS4
