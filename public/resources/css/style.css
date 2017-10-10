@@ -358,6 +358,39 @@ section {
 }
 
 /********************************************/
+/* PARTNERS
+/********************************************/
+
+.section-partners {
+	background-color: #f4f4f4;
+}
+
+.partner-box {
+	background-color: #fff;
+	border-radius: 5px;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.partner-box div {
+	padding: 15px;
+	border-bottom: 1px solid #eafefa;
+}
+
+.partner-box ul {
+	list-style: none;
+}
+
+.partner-box ul li {
+	padding: 5px 0;
+}
+
+.icon-list {
+	color: #1abc9c;
+	padding-right: 5px;
+}
+
+/********************************************/
 /* CONTACT FORM
 /********************************************/
 
