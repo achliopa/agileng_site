@@ -169,6 +169,7 @@ header {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	margin-top: 60px;
 }
 
 header img {
@@ -448,6 +449,10 @@ input[type=checkbox] {
 
 *:focus {
 	outline: none;
+}
+
+.g-recaptcha {
+	padding: 10px;	
 }
 
 /********************************************/
