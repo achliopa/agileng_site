@@ -102,6 +102,7 @@ section {
 	border-radius: 5px;
 	color: #fbfbfb;
 	margin: 5px;
+	-webkit-transition: background-color 0.2s;
 	transition: background-color 0.2s;
 }
 
@@ -155,6 +156,7 @@ section {
 
 
 header {
+	background-image: -webkit-linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../img/hero.jpg);
 	background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../img/hero.jpg);
 	background-size: cover;
 	background-position: center;
@@ -168,7 +170,8 @@ header {
 	width: 1140px;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
 	margin-top: 60px;
 }
 
@@ -184,13 +187,16 @@ header img {
 	margin-bottom: 50px;
 }
 
-.logo {
+.logo,
+.logo-alt {
 	margin-top: 10px;
 	margin-left: 10px;
 	height: 40px;
 	width: auto;
 	float: left;
 }
+
+.logo-alt { display: none; }
 
 .logo-txt {
 	float: left;
@@ -199,6 +205,8 @@ header img {
 	padding-top: 10px;
 	margin-left: 5px;
 }
+
+/* Main Nav */
 
 .main-nav {
 	float: right;
@@ -221,13 +229,42 @@ header img {
 	font-size: 90%;
 	letter-spacing: 1px;
 	border-bottom: 2px solid transparent;
+	-webkit-transition: border 0.3s;
 	transition: border 0.3s;
 }
 
 .main-nav li a:active,
 .main-nav li a:hover {
 	border-bottom: 2px solid #1abc9c;
-} 
+}
+
+/* Sticky Nav */
+
+.sticky {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 9999;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+	color: #222;
+
+}
+
+.sticky .logo-txt { 
+	color: #2966C0; 
+	padding: 5px 0;
+}
+
+.sticky .logo { display: none; }
+.sticky .logo-alt { display: block; }
+
+.sticky .main-nav { margin-top: 15px; }
+
 
 /********************************************/
 /* SECTION SERVICES
@@ -276,7 +313,8 @@ header img {
 	display: block;
 	width: 100%;
 	height: 100%;
-	filter: grayscale(30%);
+	-webkit-filter: grayscale(30%);
+	        filter: grayscale(30%);
 }
 
 .overlay {
@@ -288,6 +326,7 @@ header img {
   height: 100%;
   width: 100%;
   opacity: 0;
+  -webkit-transition: opacity .5s ease;
   transition: opacity .5s ease;
   background-color: #fbfbfb;
 }
@@ -352,6 +391,7 @@ header img {
 .city-feature a:visited {
 	text-decoration: none;
 	color: #222;
+	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
 
@@ -492,6 +532,7 @@ footer {
 .social-nav li a:visited {
 	text-decoration: none;
 	color:#1abc9c;
+	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
 
@@ -509,6 +550,7 @@ footer {
 .ion-social-linkedin,
 .ion-social-youtube,
 .ion-social-twitter {
+	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
 
@@ -534,3 +576,4 @@ footer p {
 	text-align: center;
 	padding: 10px 0 30px 0;
 }
+	

@@ -3,6 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Agileng | Homepage</title>
+	<link rel="shortcut icon" type="image/png" href="resources/img/favicon_sm.png"/>
 	<link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="vendor/css/Grid.css">
 	<link rel="stylesheet" type="text/css" href="vendor/css/ionicons.min.css">
@@ -16,6 +17,7 @@
 		<nav>
 			<div class='row'>
 				<img src="resources/img/logo_sm.png" alt="Agileng small logo" class='logo'>
+				<img src="resources/img/logo_sm_alt.png" alt="Agileng small logo" class='logo-alt'>
 				<p class='logo-txt'><span class='green'>Agil</span>Eng</p>
 				<ul class='main-nav'>
 					<li><a href="#">About</a>
@@ -28,11 +30,11 @@
 			<img src="resources/img/logo.png">
 			<p class="brand-txt"><span class="green">Agil</span>Eng</p>
 			<h1><span class='green'>Lean &amp; Mean</span> Engineering</h1>
-			<a class="btn btn-special" href="#">Learn More!</a>
-			<a class="btn btn-std" href="#">Join Us!</a>
+			<a class="btn btn-special js--scroll-to-services" href="#">Learn More!</a>
+			<a class="btn btn-std js--scroll-to-join" href="#">Join Us!</a>
 		</div>
 	</header>
-	<section class="section-services">
+	<section class="section-services js--section-services">
 		<div class="row">
 			<h2>We live and breathe technology</h2>
 			<p class='long-copy'>Hi, we are Agileng. A multidisciplinary team made up by experienced professionals. We deliver cutting-edge engineering solutions and we are proud about it. Our services include end-to-end system design and development, systems integration, prototyping and much more.</p>
@@ -187,7 +189,7 @@
 						</ul>
 					</div>
 					<div>
-						<a href="#" class="btn btn-special">Submit your Project!</a>
+						<a href="#" class="btn btn-special js--scroll-to-project">Submit your Project!</a>
 					</div>
 				</div>
 			</div>
@@ -206,7 +208,7 @@
 						</ul>						
 					</div>
 					<div>
-						<a href="#" class="btn btn-special">Join the Team!</a>
+						<a href="#" class="btn btn-special js--scroll-to-join">Join the Team!</a>
 					</div>
 				</div>
 			</div>
@@ -306,7 +308,7 @@
 				<ul class="footer-nav">
 					<li><a href="#">About</a></li>
 					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#" class="js--scroll-to-contact">Contact</a></li>
 				</ul>
 			</div>
 			<div class="col span-1-of-2">
@@ -326,6 +328,10 @@
 	<script async defer
     src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=initMap" type="text/javascript">
     </script>
-	<script src="resources/js/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+	<script src="vendor/js/noframework.waypoints.min.js"></script>
 </body>
+	<script src="resources/js/script.js"></script>
 </html>
